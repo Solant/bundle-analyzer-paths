@@ -1,0 +1,18 @@
+{
+  "name": "bundle-analyzer-paths",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "analyze:fine": "webpack --profile --json > stats.json && webpack-bundle-analyzer stats.json",
+    "analyze:error": "webpack --profile --json > dist1/stats.json && webpack-bundle-analyzer dist1/stats.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^4.20.2",
+    "webpack-bundle-analyzer": "^3.0.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
